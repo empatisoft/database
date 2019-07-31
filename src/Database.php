@@ -176,10 +176,6 @@ class Database {
      * @return mixed|string|null
      *
      * Önceki kaydı getirir.
-     *
-     * ÖRNEK:
-     *
-     * previous(array('table' => 'liste','id' => 'ID','current' => 8,'where' => array(array('key' => 'SIRA','values' => 0,'operator' => '>','condition' => 'AND'))))
      */
     public function previous($params) {
         try {
@@ -233,10 +229,6 @@ class Database {
      * @return mixed|string|null
      *
      * Sonraki kaydı getirir.
-     *
-     * ÖRNEK:
-     *
-     * next(array('table' => 'liste','id' => 'ID','current' => 8,'where' => array(array('key' => 'SIRA','values' => 0,'operator' => '>','condition' => 'AND'))))
      */
     public function next($params) {
         try {
@@ -291,9 +283,6 @@ class Database {
      * @param bool $last_id
      * @return bool|string
      *
-     * ÖRNEK KULLANIM:
-     *
-     * insert('liste', array('KIMLIK_NO' => '22324324'))
      */
     public function insert($table, $values, $last_id = false)
     {
@@ -335,9 +324,6 @@ class Database {
      * @return bool
      *
      * Güncelleme fonksiyonu
-     *
-     * ÖRNEK KULLANIM
-     * update(array('table' => 'liste','fields' => array('ONAY_KODU' => 'ONUR KAYAxxx'),'where' => array(array('key' => 'ID','values' => 4,'condition' => 'AND'),array('key' => 'SIRA','values' => 2))//'joins' => array(array('table' => 'A','alias' => 'a','type' => 'INNER','condition' => 'a.key = b.key'))))
      */
     public function update($params)
     {
@@ -379,7 +365,6 @@ class Database {
      * @return bool
      *
      * Silme fonksiyonu
-     * ÖRNEK KULLANIM: delete(array('table' => 'liste','where' => array(array('key' => 'ID','values' => 12,'operator' => '>'))))
      */
     public function delete($params)
     {
