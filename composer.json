@@ -17,6 +17,6 @@
         "ext-pdo": "*"
     },
     "autoload": {
-        "psr-4": {"Http\\": "src/Database"}
+        "psr-4": {"Database\\": "src/Database"}
     }
 }
