@@ -1,0 +1,22 @@
+{
+    "name": "empatisoft/database",
+    "description": "Veritabanı işlemleri",
+    "keywords": ["empatisoft", "database", "db", "mysql", "pdo"],
+    "homepage": "http://github.com/empatisoft/database",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Onur KAYA",
+            "email": "empatisoft@gmail.com",
+            "homepage": "https://empatisoft.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.1",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {"Http\\": "src/Database"}
+    }
+}
